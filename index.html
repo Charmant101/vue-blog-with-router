@@ -1,0 +1,37 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="/vue-blog/css/bootstrap.min.css">
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+	<style>
+		body {
+			padding-top: 20px;
+		}
+
+		.giticon {
+			font-size: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="app" class="container">
+		<nav class="navbar navbar-expand navbar-light bg-dark text-white">
+			<ul class="nav navbar-nav">
+				<li class="mr-2 text-white">
+					<router-link class="text-white" to="/" >Home</router-link>
+				</li>
+				<li >
+				<router-link to="/contact" class="text-white text-decoration-none">Contact</router-link>
+				</li>
+			</ul>
+		</nav>
+		<router-view></router-view>
+	</div>
+
+	
+	<script src="/vue-blog/js/app.js"></script>
+</body>
+</html>
